@@ -1,9 +1,10 @@
 
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaSuperscript } from 'react-icons/fa';
 import {
     SiPython, SiJavascript, SiReact, SiNodedotjs,
     SiTailwindcss, SiDocker, SiMongodb, SiRedis,
-    SiPytorch, SiOpenai, SiGit
+    SiPytorch, SiOpenai, SiGit,
+    SiTypescript, SiPostgresql, SiLatex
 } from 'react-icons/si';
 
 export const profile = {
@@ -96,4 +97,25 @@ export const skills = [
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { name: "Redis", icon: SiRedis, color: "#DC382D" },
     { name: "Git", icon: SiGit, color: "#F05032" },
+    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    { name: "LaTeX", icon: SiLatex, color: "#008080" },
+    { name: "Isabelle/HOL", icon: FaSuperscript, color: "#2563EB" },
+];
+
+export const education = [
+    {
+        id: 1,
+        school: "Eskişehir Osmangazi University",
+        degree: "M.Sc. in Mathematics and Computer Science",
+        date: "Feb 2025 - Present",
+        desc: "Specializing in Automated Theorem Proving & AI Architectures. Conducting research on formalizing mathematical proofs using Isabelle/HOL. Advisor: Assoc. Prof. Dr. Temel Ermiş."
+    },
+    {
+        id: 2,
+        school: "Eskişehir Osmangazi University",
+        degree: "B.Sc. in Mathematics and Computer Science",
+        date: "2020 - 2025",
+        desc: "Built a strong foundation in both theoretical mathematics and software development. Relevant Coursework: Abstract Mathematics, System Simulation, Numerical Analysis."
+    }
 ];

@@ -3,6 +3,7 @@ import BentoGrid from './components/BentoGrid';
 import ProjectCard from './components/ProjectCard';
 import PublicationCard from './components/PublicationCard';
 import TechStack from './components/TechStack';
+import Timeline from './components/Timeline';
 import { profile, publications } from './data/portfolio';
 import { motion } from 'framer-motion';
 import { FiEye } from 'react-icons/fi';
@@ -76,7 +77,7 @@ function App() {
 
         {/* Publications Section */}
         {publications.length > 0 && (
-          <div className="mt-24">
+          <div className="mt-24 mb-24">
             <div className="flex items-center gap-4 mb-8">
               <h3 className="text-2xl font-bold text-white">Publications & Research</h3>
               <div className="h-[1px] bg-gray-800 flex-1"></div>
@@ -88,6 +89,8 @@ function App() {
             </div>
           </div>
         )}
+
+        <Timeline />
       </main>
 
       <footer className="mt-24 text-center text-gray-600 text-sm">
