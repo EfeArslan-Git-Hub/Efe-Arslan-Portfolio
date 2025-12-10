@@ -8,11 +8,11 @@ const Timeline = () => {
     return (
         <section className="mb-24">
             <div className="flex items-center gap-4 mb-12">
-                <h3 className="text-2xl font-bold text-white">Academic Journey</h3>
-                <div className="h-[1px] bg-gray-800 flex-1"></div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Academic Journey</h3>
+                <div className="h-[1px] bg-gray-200 dark:bg-gray-800 flex-1"></div>
             </div>
 
-            <div className="relative border-l border-gray-800 ml-3 md:ml-6 space-y-12">
+            <div className="relative border-l border-gray-200 dark:border-gray-800 ml-3 md:ml-6 space-y-12">
                 {education.map((edu, index) => (
                     <motion.div
                         key={edu.id}
@@ -23,24 +23,24 @@ const Timeline = () => {
                         className="relative pl-8 md:pl-12"
                     >
                         {/* Timeline Dot */}
-                        <span className="absolute -left-[11px] top-1 bg-gray-950 p-1 border border-brand-500 rounded-full text-brand-500 shadow-[0_0_12px_rgba(14,165,233,0.4)]">
+                        <span className="absolute -left-[11px] top-1 bg-white dark:bg-gray-950 p-1 border border-brand-500 rounded-full text-brand-500 shadow-[0_0_12px_rgba(14,165,233,0.4)]">
                             <FaGraduationCap className="text-sm" />
                         </span>
 
                         {/* Content */}
                         <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 sm:items-baseline mb-2">
-                            <h4 className="text-xl font-bold text-gray-200">
+                            <h4 className="text-xl font-bold text-gray-900 dark:text-gray-200">
                                 {edu.school}
                             </h4>
-                            <span className="text-sm font-semibold text-brand-400 bg-brand-900/10 px-2 py-0.5 rounded border border-brand-500/20">
+                            <span className="text-sm font-semibold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/10 px-2 py-0.5 rounded border border-brand-200 dark:border-brand-500/20">
                                 {edu.date}
                             </span>
                         </div>
 
-                        <p className="text-lg text-gray-400 font-medium mb-2">
+                        <p className="text-lg text-gray-600 dark:text-gray-400 font-medium mb-2">
                             {edu.degree}
                         </p>
-                        <p className="text-gray-500 leading-relaxed text-sm max-w-2xl">
+                        <p className="text-gray-500 dark:text-gray-500 leading-relaxed text-sm max-w-2xl">
                             {edu.desc}
                         </p>
                     </motion.div>

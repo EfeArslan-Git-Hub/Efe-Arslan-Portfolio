@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Default Cyan/Blue Theme */
+    --color-brand-50: 240 249 255;
+    --color-brand-100: 224 242 254;
+    --color-brand-200: 186 230 253;
+    --color-brand-300: 125 211 252;
+    --color-brand-400: 56 189 248;
+    --color-brand-500: 14 165 233;
+    --color-brand-600: 2 132 199;
+    --color-brand-700: 3 105 161;
+    --color-brand-800: 7 89 133;
+    --color-brand-900: 12 74 110;
+  }
+
   body {
-    @apply bg-gray-950 text-gray-100 font-sans antialiased;
+    @apply bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans antialiased transition-colors duration-300;
   }
 }
 
@@ -12,13 +26,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #111827; 
+  background: #111827;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #374151; 
+  background: #374151;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #4b5563; 
+  background: #4b5563;
 }

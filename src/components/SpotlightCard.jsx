@@ -41,7 +41,7 @@ const SpotlightCard = ({ children, className = "" }) => {
             onBlur={handleBlur}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`relative overflow-hidden rounded-xl border border-gray-800 bg-gray-900 ${className}`}
+            className={`relative overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xl dark:shadow-none ${className}`}
             whileHover={{ y: -5 }}
             transition={{ type: "spring", stiffness: 300 }}
         >
@@ -49,7 +49,7 @@ const SpotlightCard = ({ children, className = "" }) => {
                 className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
                 style={{
                     opacity: isFocused ? 1 : 0,
-                    background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(14, 165, 233, 0.15), transparent 40%)`,
+                    background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgb(var(--color-brand-500) / 0.15), transparent 40%)`,
                 }}
             />
             <div className="relative h-full">
