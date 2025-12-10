@@ -11,7 +11,8 @@ export const profile = {
         { icon: FaLinkedin, link: "https://www.linkedin.com/in/efe-arslan-8699a1230/", label: "LinkedIn" },
         { icon: FaTwitter, link: "https://twitter.com", label: "Twitter" },
         { icon: FaEnvelope, link: "mailto:contact@efe-arslan.com", label: "Email" },
-    ]
+    ],
+    resumeUrl: "https://drive.google.com/file/d/1BZVBOqTdKt1-wLLOzaq9h5juK4P_7cnl/view?usp=sharing"
 };
 
 export const projects = [

@@ -1,10 +1,10 @@
-
 import React from 'react';
 import BentoGrid from './components/BentoGrid';
 import ProjectCard from './components/ProjectCard';
 import PublicationCard from './components/PublicationCard';
 import { profile, publications } from './data/portfolio';
 import { motion } from 'framer-motion';
+import { FiEye } from 'react-icons/fi';
 
 function App() {
   return (
@@ -33,19 +33,33 @@ function App() {
             {profile.bio}
           </p>
 
-          <div className="flex gap-6">
-            {profile.social.map((item, index) => (
+          <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div className="flex gap-6">
+              {profile.social.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white hover:scale-110 transition-all text-2xl"
+                  aria-label={item.label}
+                >
+                  <item.icon />
+                </a>
+              ))}
+            </div>
+
+            {profile.resumeUrl && (
               <a
-                key={index}
-                href={item.link}
+                href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white hover:scale-110 transition-all text-2xl"
-                aria-label={item.label}
+                className="flex items-center gap-2 px-6 py-2 rounded-full bg-white/5 border border-brand-500/50 backdrop-blur-sm hover:bg-brand-500/10 hover:border-brand-400 transition-all text-brand-400 font-medium group"
               >
-                <item.icon />
+                <FiEye className="group-hover:scale-110 transition-transform" />
+                <span>View CV</span>
               </a>
-            ))}
+            )}
           </div>
         </motion.div>
       </header>
