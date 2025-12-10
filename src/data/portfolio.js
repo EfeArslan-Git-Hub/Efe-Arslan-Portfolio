@@ -11,12 +11,13 @@ export const profile = {
     name: "Efe Arslan",
     avatar: "https://github.com/EfeArslan-Git-Hub.png",
     title: "Full Stack Developer & Researcher",
+    email: "efearslancontact@gmail.com", // Add your real email here
     bio: "Passionate about building scalable web applications and exploring the frontiers of AI. Transforming complex problems into elegant solutions.",
     social: [
         { icon: FaGithub, link: "https://github.com/EfeArslan-Git-Hub", label: "GitHub" },
         { icon: FaLinkedin, link: "https://www.linkedin.com/in/efe-arslan-8699a1230/", label: "LinkedIn" },
         { icon: FaTwitter, link: "https://twitter.com", label: "Twitter" },
-        { icon: FaEnvelope, link: "mailto:contact@efe-arslan.com", label: "Email" },
+        { icon: FaEnvelope, link: "mailto:efearslancontact@gmail.com", label: "Email" },
     ],
     resumeUrl: "https://drive.google.com/file/d/1BZVBOqTdKt1-wLLOzaq9h5juK4P_7cnl/view?usp=sharing"
 };

@@ -5,7 +5,9 @@ import PublicationCard from './components/PublicationCard';
 import TechStack from './components/TechStack';
 import Timeline from './components/Timeline';
 import ThemeSettings from './components/ThemeSettings';
+import Sidebar from './components/Sidebar';
 import ScrollToTop from './components/ScrollToTop';
+import Contact from './components/Contact';
 import { profile, publications } from './data/portfolio';
 import { motion } from 'framer-motion';
 import { FiEye } from 'react-icons/fi';
@@ -14,6 +16,7 @@ function App() {
   return (
     <div className="min-h-screen p-6 md:p-12 lg:p-24 max-w-7xl mx-auto transition-colors duration-300 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <ThemeSettings />
+      <Sidebar />
       <ScrollToTop />
       {/* Header Profile Section */}
       <header className="mb-16">
@@ -71,9 +74,11 @@ function App() {
       </header>
 
       <main>
-        <TechStack />
+        <div id="tech-stack" className="scroll-mt-24">
+          <TechStack />
+        </div>
 
-        <div className="flex items-center gap-4 mb-8">
+        <div id="works" className="flex items-center gap-4 mb-8 scroll-mt-24">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Selected Works</h3>
           <div className="h-[1px] bg-gray-200 dark:bg-gray-800 flex-1"></div>
         </div>
@@ -81,7 +86,7 @@ function App() {
 
         {/* Publications Section */}
         {publications.length > 0 && (
-          <div className="mt-24 mb-24">
+          <div id="publications" className="mt-24 mb-24 scroll-mt-24">
             <div className="flex items-center gap-4 mb-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Publications & Research</h3>
               <div className="h-[1px] bg-gray-200 dark:bg-gray-800 flex-1"></div>
@@ -94,7 +99,13 @@ function App() {
           </div>
         )}
 
-        <Timeline />
+        <div id="timeline" className="scroll-mt-24">
+          <Timeline />
+        </div>
+
+        <div id="contact" className="scroll-mt-24">
+          <Contact />
+        </div>
       </main>
 
       <footer className="mt-24 pb-12 text-center">
