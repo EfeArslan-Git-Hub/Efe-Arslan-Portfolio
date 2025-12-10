@@ -1,5 +1,10 @@
 
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import {
+    SiPython, SiJavascript, SiReact, SiNodedotjs,
+    SiTailwindcss, SiDocker, SiMongodb, SiRedis,
+    SiPytorch, SiOpenai, SiGit
+} from 'react-icons/si';
 
 export const profile = {
     name: "Efe Arslan",
@@ -61,20 +66,34 @@ export const projects = [
 export const publications = [
     {
         id: 1,
-        title: "Optimizing Neural Networks for Edge Devices",
-        publisher: "IEEE International Conference on AI",
-        date: "2024",
-        desc: "A comprehensive study on reducing latency in deep learning models deployed on IoT hardware.",
-        link: "#",
-        tags: ["Deep Learning", "IoT"]
+        title: "AI-Assisted Theorem Proving with Isabelle/HOL",
+        publisher: "Academic Research & Technical Series",
+        date: "2023 - Present",
+        desc: "A comprehensive project on formalizing complex mathematical theorems using the Isabelle/HOL proof assistant. Investigating the integration of LLMs to automate intermediate proof steps.",
+        link: "https://github.com/EfeArslan-Git-Hub",
+        tags: ["Isabelle/HOL", "Formal Verification", "Automated Reasoning"]
     },
     {
         id: 2,
-        title: "Blockchain Scalability Solutions",
-        publisher: "Journal of Computer Security",
-        date: "2023",
-        desc: "Proposed a novel sharding mechanism to improve transaction throughput in decentralized networks.",
+        title: "Automated Geometry Reasoning via GeoGebra Discovery",
+        publisher: "Educational Series (Upcoming)",
+        date: "2025",
+        desc: "An upcoming technical series exploring the capabilities of GeoGebra Discovery for automated theorem proving in Euclidean geometry, bridging the gap between visual intuition and formal logic.",
         link: "#",
-        tags: ["Blockchain", "Security"]
+        tags: ["GeoGebra", "Geometry", "Symbolic Computation"]
     }
+];
+
+export const skills = [
+    { name: "Python", icon: SiPython, color: "#3776AB" },
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "React", icon: SiReact, color: "#61DAFB" },
+    { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+    { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
+    { name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
+    { name: "OpenAI", icon: SiOpenai, color: "#412991" },
+    { name: "Docker", icon: SiDocker, color: "#2496ED" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "Redis", icon: SiRedis, color: "#DC382D" },
+    { name: "Git", icon: SiGit, color: "#F05032" },
 ];

@@ -2,6 +2,7 @@ import React from 'react';
 import BentoGrid from './components/BentoGrid';
 import ProjectCard from './components/ProjectCard';
 import PublicationCard from './components/PublicationCard';
+import TechStack from './components/TechStack';
 import { profile, publications } from './data/portfolio';
 import { motion } from 'framer-motion';
 import { FiEye } from 'react-icons/fi';
@@ -65,6 +66,8 @@ function App() {
       </header>
 
       <main>
+        <TechStack />
+
         <div className="flex items-center gap-4 mb-8">
           <h3 className="text-2xl font-bold text-white">Selected Works</h3>
           <div className="h-[1px] bg-gray-800 flex-1"></div>
