@@ -93,8 +93,24 @@ function App() {
         <Timeline />
       </main>
 
-      <footer className="mt-24 text-center text-gray-600 text-sm">
-        <p>&copy; {new Date().getFullYear()} {profile.name}. Built with React, Vite & Tailwind.</p>
+      <footer className="mt-24 pb-12 text-center">
+        <div className="flex justify-center gap-6 mb-4">
+          {profile.social.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-brand-400 transition-colors text-xl"
+              aria-label={item.label}
+            >
+              <item.icon />
+            </a>
+          ))}
+        </div>
+        <p className="text-gray-600 text-sm">
+          &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.
+        </p>
       </footer>
     </div>
   );
