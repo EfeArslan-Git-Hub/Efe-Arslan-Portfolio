@@ -5,6 +5,7 @@ import PublicationCard from './components/PublicationCard';
 import TechStack from './components/TechStack';
 import Timeline from './components/Timeline';
 import ThemeSettings from './components/ThemeSettings';
+import ScrollToTop from './components/ScrollToTop';
 import { profile, publications } from './data/portfolio';
 import { motion } from 'framer-motion';
 import { FiEye } from 'react-icons/fi';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="min-h-screen p-6 md:p-12 lg:p-24 max-w-7xl mx-auto transition-colors duration-300 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <ThemeSettings />
+      <ScrollToTop />
       {/* Header Profile Section */}
       <header className="mb-16">
         <motion.div
