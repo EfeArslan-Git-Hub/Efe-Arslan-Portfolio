@@ -28,7 +28,7 @@ export const projects = [
         title: "RAG Chatbot",
         desc: "An intelligent chatbot using Retrieval-Augmented Generation to answer queries based on custom document knowledge bases.",
         techStack: ["Python", "LangChain", "OpenAI", "Streamlit"],
-        link: "efe-arslan-rag.streamlit.app/",
+        link: "https://efe-arslan-rag.streamlit.app/",
         githubUrl: "https://github.com/EfeArslan-Git-Hub/RAG-Retrieval-Augmented-Generation-Document-Assistant",
         category: "AI & ML",
         span: "col-span-1 md:col-span-2 row-span-1" // Feature item
@@ -38,7 +38,7 @@ export const projects = [
         title: "E-Commerce API",
         desc: "A robust RESTful API for a scalable e-commerce platform featuring authentication, payment processing, and inventory management.",
         techStack: ["Node.js", "Express", "MongoDB", "Redis"],
-        link: "efe-arslan-api.onrender.com/docs",
+        link: "https://efe-arslan-api.onrender.com/docs",
         githubUrl: "https://github.com/EfeArslan-Git-Hub/FastAPI-Ecommerce-Core",
         category: "Backend",
         span: "col-span-1 row-span-1"
