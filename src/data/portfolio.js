@@ -38,7 +38,7 @@ export const projects = [
         title: "E-Commerce API",
         desc: "A robust RESTful API for a scalable e-commerce platform featuring authentication, payment processing, and inventory management.",
         techStack: ["Node.js", "Express", "MongoDB", "Redis"],
-        link: "https://efe-arslan-api.onrender.com/docs",
+        link: "https://efe-arslan-api.onrender.com",
         githubUrl: "https://github.com/EfeArslan-Git-Hub/FastAPI-Ecommerce-Core",
         category: "Backend",
         span: "col-span-1 row-span-1"
