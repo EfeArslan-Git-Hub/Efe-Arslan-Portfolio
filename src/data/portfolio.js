@@ -44,6 +44,16 @@ export const projects = [
         span: "col-span-1 row-span-1"
     },
     {
+        id: 7,
+        title: "Lumina - AI Knowledge Base",
+        desc: "A smart 'Second Brain' SaaS application built with Next.js 14. It allows users to store notes and links, while Gemini AI automatically generates concise summaries and smart tags in the background.",
+        techStack: ["Next.js 14", "TypeScript", "Supabase", "Gemini AI", "Tailwind"],
+        link: "https://lumina-ai-knowledge-base.vercel.app/",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Lumina-AI-Knowledge-Base",
+        category: "Full Stack SaaS",
+        span: "col-span-1 md:col-span-2 row-span-1"
+    },
+    {
         id: 3,
         title: "Sorting Visualizer",
         desc: "Interactive visualization tool for various sorting algorithms like Bubble Sort, Merge Sort, and Quick Sort.",
@@ -52,6 +62,16 @@ export const projects = [
         githubUrl: "https://github.com/EfeArslan-Git-Hub/React-Sorting-Visualizer",
         category: "Frontend",
         span: "col-span-1 row-span-1"
+    },
+    {
+        id: 6,
+        title: "Math Wizard (Symbolic Solver)",
+        desc: "An advanced symbolic mathematics engine inspired by WolframAlpha. It solves complex Geometry, Calculus, and Physics problems, providing step-by-step LaTeX proofs and interactive 3D visualizations.",
+        techStack: ["React", "Vite", "Python (SymPy)", "Plotly.js", "Tailwind"],
+        link: "https://symbolic-geometry-solver.vercel.app/",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Symbolic-Geometry-Solver",
+        category: "AI & Research",
+        span: "col-span-1 md:col-span-2 row-span-1"
     },
     {
         id: 4,
@@ -73,16 +93,8 @@ export const projects = [
         category: "Game Dev",
         span: "col-span-1 row-span-1"
     },
-    {
-        id: 6,
-        title: "Math Wizard (Symbolic Solver)",
-        desc: "An advanced symbolic mathematics engine inspired by WolframAlpha. It solves complex Geometry, Calculus, and Physics problems, providing step-by-step LaTeX proofs and interactive 3D visualizations.",
-        techStack: ["React", "Vite", "Python (SymPy)", "Plotly.js", "Tailwind"],
-        link: "https://symbolic-geometry-solver.vercel.app/",
-        githubUrl: "https://github.com/EfeArslan-Git-Hub/Symbolic-Geometry-Solver",
-        category: "AI & Research",
-        span: "col-span-1 md:col-span-2 row-span-1"
-    }
+
+
 ];
 
 export const publications = [
