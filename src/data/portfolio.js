@@ -93,7 +93,16 @@ export const projects = [
         category: "Game Dev",
         span: "col-span-1 row-span-1"
     },
-
+    {
+        id: 8,
+        title: "Algorithmic Topology Synthesizer",
+        desc: "A high-performance interactive simulation engine. It demonstrates complex procedural generation algorithms (BSP Trees, Cellular Automata) and visualizes how AI agents (BFS vs. A*) navigate through these artificial environments using HTML5 Canvas.",
+        techStack: ["React", "TypeScript", "Canvas API", "Tailwind"],
+        link: "https://algorithmic-topology-synthesizer.vercel.app/",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Algorithmic-Topology-Synthesizer",
+        category: "Algorithms & CS",
+        span: "col-span-1"
+    },
 
 ];
 
