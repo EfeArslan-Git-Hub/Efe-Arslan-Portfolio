@@ -103,6 +103,16 @@ export const projects = [
         category: "Algorithms & CS",
         span: "col-span-1"
     },
+    {
+        id: 9,
+        title: "Distributed Consensus Engine",
+        desc: "An interactive visualization of the Raft Consensus Algorithm. It uses Finite State Machines (XState) to simulate how distributed nodes achieve consensus, elect leaders, and handle network failures in real-time.",
+        techStack: ["React", "TypeScript", "XState", "Framer Motion", "Zustand"],
+        link: "https://distributed-state-consensus-engine.vercel.app/",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Distributed-State-Consensus-Engine",
+        category: "System Architecture",
+        span: "col-span-1 md:col-span-2 row-span-1"
+    }
 
 ];
 
