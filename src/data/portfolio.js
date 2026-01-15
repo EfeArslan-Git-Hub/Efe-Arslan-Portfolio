@@ -84,17 +84,17 @@ export const projects = [
         span: "col-span-1 row-span-1"
     },
     {
-        id: 5,
-        title: "Cyber Snake AI",
-        desc: "A classic Snake game reimagined with a Cyberpunk aesthetic. Features a 'Manual Mode' and an 'AI Autopilot' powered by Breadth-First Search (BFS) algorithm.",
-        techStack: ["React", "Vite", "Tailwind", "Algorithms"],
-        link: "https://cyber-snake-ai.vercel.app",
-        githubUrl: "https://github.com/EfeArslan-Git-Hub/Cyber-Snake-AI",
-        category: "Game Dev",
-        span: "col-span-1 row-span-1"
+        id: 8,
+        title: "Distributed Consensus Engine",
+        desc: "An interactive visualization of the Raft Consensus Algorithm. It uses Finite State Machines (XState) to simulate how distributed nodes achieve consensus, elect leaders, and handle network failures in real-time.",
+        techStack: ["React", "TypeScript", "XState", "Framer Motion", "Zustand"],
+        link: "https://distributed-state-consensus-engine.vercel.app/",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Distributed-State-Consensus-Engine",
+        category: "System Architecture",
+        span: "col-span-1 md:col-span-2 row-span-1"
     },
     {
-        id: 8,
+        id: 9,
         title: "Algorithmic Topology Synthesizer",
         desc: "A high-performance interactive simulation engine. It demonstrates complex procedural generation algorithms (BSP Trees, Cellular Automata) and visualizes how AI agents (BFS vs. A*) navigate through these artificial environments using HTML5 Canvas.",
         techStack: ["React", "TypeScript", "Canvas API", "Tailwind"],
@@ -103,16 +103,7 @@ export const projects = [
         category: "Algorithms & CS",
         span: "col-span-1"
     },
-    {
-        id: 9,
-        title: "Distributed Consensus Engine",
-        desc: "An interactive visualization of the Raft Consensus Algorithm. It uses Finite State Machines (XState) to simulate how distributed nodes achieve consensus, elect leaders, and handle network failures in real-time.",
-        techStack: ["React", "TypeScript", "XState", "Framer Motion", "Zustand"],
-        link: "https://distributed-state-consensus-engine.vercel.app/",
-        githubUrl: "https://github.com/EfeArslan-Git-Hub/Distributed-State-Consensus-Engine",
-        category: "System Architecture",
-        span: "col-span-1 md:col-span-2 row-span-1"
-    }
+
 
 ];
 
