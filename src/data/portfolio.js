@@ -103,6 +103,16 @@ export const projects = [
         category: "Algorithms & CS",
         span: "col-span-1"
     },
+    {
+        id: 5,
+        title: "Cyber Snake AI",
+        desc: "A classic Snake game reimagined with a Cyberpunk aesthetic. Features a 'Manual Mode' and an 'AI Autopilot' powered by Breadth-First Search (BFS) algorithm.",
+        techStack: ["React", "Vite", "Tailwind", "Algorithms"],
+        link: "https://cyber-snake-ai.vercel.app",
+        githubUrl: "https://github.com/EfeArslan-Git-Hub/Cyber-Snake-AI",
+        category: "Game Dev",
+        span: "col-span-1 row-span-1"
+    },
 
 
 ];
